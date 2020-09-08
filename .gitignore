@@ -1,0 +1,7 @@
+pkg
+.bin
+/.idea/
+nginx_buildpack-*.zip
+!vendor/**
+testFile.txt
+testFile_FromTestBranch.txt

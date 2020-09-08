@@ -1,0 +1,423 @@
+v1.1.15 Aug 31, 2020
+=====================
+
+* Add openresty 1.17.8.2, remove openresty 1.17.8.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174538744)
+
+* Update libbuildpack
+
+
+v1.1.14 Aug 17, 2020
+=====================
+
+* Add nginx 1.19.2, remove nginx 1.19.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174279130)
+
+
+v1.1.13 Aug 12, 2020
+=====================
+
+* Set default nginx version to 1.19, remove nginx 1.17.* due to EOL
+  (https://www.pivotaltracker.com/story/show/173017640)
+
+* Update libbuildpack
+
+
+v1.1.12 Jul 31, 2020
+=====================
+
+* sets LUA_PATH to load the resty.core module
+  see https://github.com/openresty/lua-nginx-module/issues/1533
+
+* Add openresty 1.17.8.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173831091)
+
+v1.1.11 Jul 08, 2020
+=====================
+
+* Add nginx 1.19.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173689265)
+
+
+v1.1.10 Jun 16, 2020
+=====================
+
+* Remove Nginx 1.16 due to End of Support
+  See issue #32
+
+
+v1.1.9 May 15, 2020
+====================
+
+* Re-add 1.16.x as an optional dependency
+
+* Rebuild nginx 1.18.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172657362)
+
+* Rebuild nginx 1.17.10
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172313699)
+
+* Add nginx 1.18.0, remove nginx 1.16.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172657362)
+
+
+v1.1.8 Apr 22, 2020
+====================
+
+* Add nginx 1.17.10, remove nginx 1.17.9
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172313699)
+
+v1.1.7 Apr 02, 2020
+====================
+
+* Add openresty 1.15.8.3, remove openresty 1.15.8.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172004504)
+
+
+v1.1.6 Mar 09, 2020
+====================
+
+* Add nginx 1.17.9, remove nginx 1.17.8
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171603145)
+
+* {{nameservers}} parameters fix
+  (https://www.pivotaltracker.com/story/show/171310706)
+
+
+v1.1.5 Feb 03, 2020
+====================
+
+* Add nginx 1.17.8, remove nginx 1.17.7
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170822201)
+
+
+v1.1.4 Jan 15, 2020
+====================
+
+* Rebuild nginx 1.17.7
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170441392)
+
+* Rebuild nginx 1.16.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168936679)
+
+
+v1.1.3 Jan 03, 2020
+====================
+
+* Add nginx 1.17.7, remove nginx 1.17.6
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170441392)
+
+
+v1.1.2 Nov 25, 2019
+====================
+
+* Add nginx 1.17.6, remove nginx 1.17.5
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169841587)
+
+
+v1.1.1 Oct 31, 2019
+====================
+
+* Add nginx 1.17.5, remove nginx 1.17.4
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169293603)
+
+
+v1.1.0 Oct 10, 2019
+=====================
+
+* Remove cflinuxfs2 dependencies.
+  Fixes #20
+  (https://www.pivotaltracker.com/story/show/166710438)
+
+* Add nginx 1.17.4, remove nginx 1.17.3
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168729879)
+
+* Update nginx conf templating to use two passes
+  - one for plaintext variable defined in buildpack.yml
+  - one for everything else, which will be html escaped
+  (https://www.pivotaltracker.com/story/show/165884664)
+
+
+v1.0.18 Sep 05, 2019
+=====================
+
+* Add openresty 1.15.8.2, remove openresty 1.15.8.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168196518)
+
+
+v1.0.17 Aug 27, 2019
+=====================
+
+* Add nginx 1.17.3, remove nginx 1.17.2
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168149045)
+
+
+* Add nginx 1.16.1, remove nginx 1.16.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168149237)
+
+
+v1.0.16 Aug 06, 2019
+=====================
+
+* Add nginx 1.17.2, remove nginx 1.17.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167455436)
+
+v1.0.15 Jul 11, 2019
+=====================
+
+* Merge pull request #12 from i6e/cf-internal-domains-resolver
+  (https://www.pivotaltracker.com/story/show/163430800)
+
+
+v1.0.14 Jun 27, 2019
+=====================
+
+* Change default version of nginx to 1.17 and remove 1.15 deprecation date
+  (https://www.pivotaltracker.com/story/show/166900672)
+
+* Add nginx 1.17.1, remove nginx 1.15.12, 1.17.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166900672)
+
+* Rebuild nginx 1.16.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165611882)
+
+* Rebuild nginx 1.17.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166292410)
+
+
+v1.0.13 Jun 05, 2019
+=====================
+
+* Change default nginx version to 1.15.x
+  (https://www.pivotaltracker.com/story/show/166292306)
+
+* Add openresty 1.15.8.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166292623)
+
+* Add nginx 1.17.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166292410)
+
+v1.0.12 May 03, 2019
+=====================
+
+* Change stable version line to 1.14.x until notice has been sent out
+  (https://www.pivotaltracker.com/story/show/165611882)
+
+* Keep default_version at 1.15.x
+  - Default Version was changed automatically by a bug in ci
+  - Add 1.14.2 for cflinuxfs2 back in, after removal by bug in ci
+  (https://www.pivotaltracker.com/story/show/165611882)
+
+* Make the mainline version the default as specified in docs
+
+* Add nginx 1.16.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165611882)
+
+
+v1.0.11 Apr 23, 2019
+=====================
+
+* Remove warning logs causing bosh cli error
+
+* Add nginx 1.15.12, remove nginx 1.15.10
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165387666)
+
+v1.0.10 Apr 02, 2019
+=====================
+
+* Add nginx 1.15.10, remove nginx 1.15.9
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164899137)
+
+v1.0.9 Mar 01, 2019
+====================
+
+* Add nginx 1.15.9, remove nginx 1.15.8
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164249472)
+
+* Add source_sha256 for source code dependencies
+  (https://www.pivotaltracker.com/story/show/163711928)
+
+v1.0.8 Feb 05, 2019
+====================
+
+* Update go to 1.11.5 for specifying buildpack url
+  (https://www.pivotaltracker.com/story/show/163701450)
+
+v1.0.7 Jan 29, 2019
+====================
+
+* Vendor go dependencies and use for build
+  (https://www.pivotaltracker.com/story/show/163494309)
+
+
+v1.0.6 Jan 23, 2019
+====================
+
+* Use built version of go 1.11.4 in online unbuilt/URL buildpack
+  (https://www.pivotaltracker.com/story/show/163089977)
+
+* Add support for OpenResty
+  - Set 'dist: openresty' in 'buildpack.yml' to use OpenResty
+  (https://www.pivotaltracker.com/story/show/155191586)
+
+* Setup brats environment
+  Go tools can not be executed without the environment variables from
+  .envrc.
+
+
+v1.0.5 Jan 07, 2019
+====================
+
+* Fix bug in nginx.conf port-parsing
+  (https://www.pivotaltracker.com/story/show/162916825)
+
+* Print a warning when access logging is disabled
+  (https://www.pivotaltracker.com/story/show/155832563)
+
+* Add nginx 1.15.8, remove nginx 1.15.7
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162839812)
+
+v1.0.4 Dec 07, 2018
+====================
+
+* Add nginx 1.14.2, remove nginx 1.14.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162417438)
+
+* Add nginx 1.15.7, remove nginx 1.15.6
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162240858)
+
+* Ignore whitespaces for nginx.conf port validation
+  (https://www.pivotaltracker.com/story/show/162082773)
+
+v1.0.3 Nov 14, 2018
+====================
+
+* Add nginx 1.15.6, remove nginx 1.15.5
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161755151)
+
+* Add nginx 1.14.1, remove nginx 1.14.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161755166)
+
+* Set buildpack when pushing twice
+  - Pushing with --no-start fails on the second push when no buildpack
+    is specified in PCF 1.12, our new lts version
+
+v1.0.2 Oct 12, 2018
+====================
+
+* Add nginx 1.15.5, remove nginx 1.15.2
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160928055)
+
+* Allow template syntax for loading user provided modules
+  (https://www.pivotaltracker.com/story/show/159321437)
+
+v1.0.1 Aug 09, 2018
+====================
+
+* Rebuild nginx 1.14.0
+  for stacks cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/159249164)
+
+* Add nginx 1.15.2, remove nginx 1.15.1
+  (https://www.pivotaltracker.com/story/show/159272826)
+
+v1.0.0 Jul 16, 2018
+====================
+
+This is the first official release.
+
+**Breaking Changes** to filename (`nginx.yml` -> `buildpack.yml`) and `nginx.conf` syntax.
+
+* Update templating functions for nginx.conf
+  - Change `{{.Port}}` to `{{ port }}` (breaking change)
+  - Change `load_module {{.NginxModulesDir}}/<name>.so;` to `{{ module <name> }}` (breaking change)
+  - Add {{ env "SOME_VAR" }} to allow templating of env vars
+  (https://www.pivotaltracker.com/story/show/156618438)
+  (https://www.pivotaltracker.com/story/show/155953917)
+
+* Specify nginx version via buildpack.yml
+  (https://www.pivotaltracker.com/story/show/158268170)
+
+* Make default nginx pid work.
+  Apps no longer need to set `pid` to `/tmp/nginx.pid` because the default just works.
+  (https://www.pivotaltracker.com/story/show/158095548)
+
+* Add nginx 1.15.1, 1.14.0; remove nginx 1.12.1, 1.12.2, 1.13.9, 1.13.11
+  (https://www.pivotaltracker.com/story/show/158800200)
+  (https://www.pivotaltracker.com/story/show/156851318)
+
+v0.0.5 Apr 09, 2018
+====================
+
+* Add nginx 1.13.11, remove nginx 1.13.10
+  (https://www.pivotaltracker.com/story/show/156472503)
+
+* Validate nginx.conf during supply
+  (https://www.pivotaltracker.com/story/show/155832530)
+
+* Use manifest cache downloads
+  (https://www.pivotaltracker.com/story/show/155405429)
+
+v0.0.4 Feb 26, 2018
+====================
+
+* Add nginx 1.13.9, remove 1.13.7
+  (https://www.pivotaltracker.com/story/show/155362465)
+
+v0.0.3 Feb 08, 2018
+====================
+
+* Enable manifest apply override
+  (https://www.pivotaltracker.com/story/show/153614649)
+
+* Emit a warning if a stable line version is selected
+  (https://www.pivotaltracker.com/story/show/152785169)
+
+* Include multiple versions of nginx
+    - Two versions of each supported line 1.12.x and 1.13.x
+    - Allow version specified as "mainline" and "stable" in nginx.yml
+  (https://www.pivotaltracker.com/story/show/152785099)
+
+* Create executable to run nginx.conf through templating
+  (https://www.pivotaltracker.com/story/show/152685309)
+
+v0.0.2 Jan 17, 2018
+====================
+
+* Initial support for nginx buildpack
