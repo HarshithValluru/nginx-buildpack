@@ -220,12 +220,12 @@ var _ = Describe("Supply", func() {
 		})
 
 		It("parses the port", func() {
-			ioutil.WriteFile(filepath.Join(buildDir, "nginx.conf"), []byte("{{port}}"), 0666)
+			ioutil.WriteFile(filepath.Join(buildDir, "nginx.conf"), []byte("{{port}}"), 0777)
 			Expect(supplier.ValidateNginxConf()).To(Succeed())
 		})
 
 		It("parses the port and ignores white spaces", func() {
-			ioutil.WriteFile(filepath.Join(buildDir, "nginx.conf"), []byte("{{  port  }}"), 0666)
+			ioutil.WriteFile(filepath.Join(buildDir, "nginx.conf"), []byte("{{  port  }}"), 0777)
 			Expect(supplier.ValidateNginxConf()).To(Succeed())
 		})
 
